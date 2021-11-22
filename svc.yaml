@@ -1,0 +1,27 @@
+apiVersion: v1
+kind: Service
+metadata:
+  creationTimestamp: "2021-11-21T18:06:26Z"
+  labels:
+    app: sealneaward
+  name: sealneaward-deployment
+  namespace: default
+  resourceVersion: "2646"
+  uid: 0e15e144-0ffd-4cd3-9211-91a57e452623
+spec:
+  clusterIP: 10.96.255.26
+  clusterIPs:
+  - 10.96.255.26
+  ipFamilies:
+  - IPv4
+  ipFamilyPolicy: SingleStack
+  ports:
+  - port: 80
+    protocol: TCP
+    targetPort: 80
+  selector:
+    app: sealneaward
+  sessionAffinity: None
+  type: ClusterIP
+status:
+  loadBalancer: {}
