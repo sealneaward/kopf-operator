@@ -2,6 +2,7 @@ apiVersion: sealneaward.github/v1
 kind: DemoWeb
 metadata:
   name: sealneaward
+  namespace: demo
 spec:
   replicas: 2
   gitrepo: "https://github.com/sealneaward/sealneaward.github.io.git"
